@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--######## Font linked here ########-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Icon  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--######## favicon linked here ########-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--######## Css linked here ########-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Collection</title>
+</head>
+<!--#################################-->
+<!--######## Body start here ########-->
+<!--#################################-->
+<body>
+    
+<!--#################################-->
+<!--######## Header start here ########-->
+<!--#################################-->
+<header>
+    <div class="brand-name">
+        <a href="index.html"><h2>BookC</h2></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="pages/shop.html">Shop</a></li>
+            <li><a href="#">Offer</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- ######################## -->
+<!-- Mobile Menu start here -->
+<!-- ######################## -->
+<nav class="mobile-nav">
+    <div class="brand-name">
+        <a href="index.html"><h2>BookC</h2></a>
+    </div>
+    <div class="mobile-nav-icon">
+       <span onclick="openNav()">&#9776;</span>
+    </div>
+       <div id="nav" class="overlay">
+           <a class="closebtn" onclick="closeNav()" href="javascript:void()">&times;</a>
+           <div class="overlay-content">
+               <a onclick="closeNav()" href="index.html">Main</a>
+               <a onclick="closeNav()" href="pages/shop.html">Shop</a>
+               <a onclick="closeNav()" href="#">Offer</a>
+           </div>
+       </div>
+</nav>
+
+<script>
+
+function openNav() {
+   document.getElementById("nav").style.width = "100%";
+}
+function closeNav() {
+   document.getElementById("nav").style.width = "0%";
+}
+
+</script>
+
+<!--#########################################-->
+<!--######## Hero section start here ########-->
+<!--#########################################-->
+<section class="hero-container">
+    <div class="hero-container-content">
+        <h4>E-book platform</h4>
+        <h2>Learning and teaching <br> Online, made easy.</h2>
+        <p>Gain subject certification or earn money while teaching online with GlobalTalk</p>
+        <a href="#">Learn more →</a>
+    </div>
+    <div class="hero-container-img">
+        <img src="img/hero-img.jpg" alt="hero-img.jpg">
+    </div>
+</section>
+
+<!--##################################################-->
+<!--######## Sp-Collection section start here ########-->
+<!--##################################################-->
+<section class="sp-collection">
+    <div class="sp-collection-title">
+        <h2>Special collection</h2>
+    </div>
+    <div class="sp-collection-container">
+        <div class="sp-collection-container-content">
+            <div class="sp-collection-container-content-img">
+                <img src="img/Origin By Dan Brown.png" alt="Origin By Dan Brown.png">
+            </div>
+            <div class="sp-collection-container-content-post">
+                <h2>Origin By Dan Brown</h2>
+                <h4>Free</h4>
+                <a href="#">Download →</a>
+            </div>
+        </div>
+        <div class="sp-collection-container-content">
+            <div class="sp-collection-container-content-img">
+                <img src="img/Mystical Poems of Rumi.png" alt="Mystical Poems of Rumi.png">
+            </div>
+            <div class="sp-collection-container-content-post">
+                <h2>Mystical Poems of Rumi</h2>
+                <h4>Free</h4>
+                <a href="#">Download →</a>
+            </div>
+        </div>
+        <div class="sp-collection-container-content">
+            <div class="sp-collection-container-content-img">
+                <img src="img/One Indian Girl By Chetan.png" alt="One Indian Girl By Chetan.png">
+            </div>
+            <div class="sp-collection-container-content-post">
+                <h2>One Indian Girl By Chetan</h2>
+                <h4>Free</h4>
+                <a href="#">Download →</a>
+            </div>
+        </div>
+        <div class="sp-collection-container-content">
+            <div class="sp-collection-container-content-img">
+                <img src="img/One Night @ The Call.png" alt="One Night @ The Call.png">
+            </div>
+            <div class="sp-collection-container-content-post">
+                <h2>One Night @ The Call</h2>
+                <h4>Free</h4>
+                <a href="#">Download →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--############################################-->
+<!--######## Footer section start here #########-->
+<!--############################################-->
+<footer>
+    <p>©All rights reserved by Lalin</p>
+</footer>
+
+</body>
+</html>

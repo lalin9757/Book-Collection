@@ -1,0 +1,481 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color:#eae4e9;
+}
+/*##############################
+######## Nav start here ########
+################################ */
+/*##############################
+######## Header start here ########
+################################ */
+header {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .brand-name a{
+    text-decoration: none;
+    font-size: 34px;
+    color: #023047;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+header ul li a {
+    color: #023047;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 35px;
+    padding: 8px 24px;
+    font-weight: bold;
+}
+header nav ul li:nth-child(3) {
+    background-color: #d3ab9e;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+/* ############################ */
+/* Mobile Menu part start here */
+/* ############################ */
+.mobile-nav {
+    display: none;
+}
+
+/*#######################################
+######## Hero section start here ########
+######################################### */
+.hero-container{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    height: 600px;
+    padding-top: 100px;
+}
+.hero-container-content{
+    flex: 1;
+    align-self: center;
+}
+.hero-container-content p{
+    margin-top: -25px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.hero-container-content h4{
+    font-size: 14px;
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: 600;  
+}
+.hero-container-content h2{
+    font-size: 40px;
+    color:#797d62 ;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: -10px;
+}
+.hero-container-content a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #023047;
+    border: 2px solid #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color:#d3ab9e;
+    border-radius: 5px;
+}
+.hero-container-content a:hover{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #023047;
+    border: 2px solid #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color:#eae4e9;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.hero-container-img img{
+    flex: 1;
+    width: 100%;
+    border-radius: 15px;
+}
+/*################################################
+######## sp-collection section start here ########
+################################################## */
+.sp-collection-title{
+    text-align: center;
+    font-size: 30px;
+    color: #023047;
+    text-transform: uppercase;
+}
+.sp-collection{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.sp-collection-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.sp-collection-container-content{
+    flex: 1;
+    flex-wrap: wrap;
+    color: #023047;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.sp-collection-container-content-img{
+    flex: 1;
+    flex-wrap: wrap;
+}
+.sp-collection-container-content-img img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+ }
+.sp-collection-container-content-post{
+    flex: 1;
+    flex-wrap: wrap;
+   border: 1px solid #797d62;
+   margin: 15px;
+   padding: 15px;
+   padding-bottom: 35px;
+   line-height: 20px;
+   border-radius:5px
+ }
+ .sp-collection-container-content-post h2{
+    font-size: 18px;
+ }
+ .sp-collection-container-content-post h4{
+    color: #eae4e9;
+    font-size: 15px;
+    background-color: #023047;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+ }
+ .sp-collection-container-content-post a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #023047;
+    border: 2px solid #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color:#d3ab9e;
+    border-radius: 5px;
+ }
+ .sp-collection-container-content-post a:hover{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #023047;
+    border: 2px solid #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color:#eae4e9;
+    border-radius: 5px;
+    transition: 0.7s;
+ }
+
+ /*#######################################
+######## Footer section start here ########
+######################################### */
+footer{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #797d62;
+    height: 100px;
+    justify-content: center;
+    place-items: center;
+    margin-top: 100px;
+}
+footer p{
+    color: #eae4e9;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+ /*#######################################
+######## Mobile device start here ########
+######################################### */
+@media(max-width:767px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background-color:#eae4e9;
+    }
+ /* ############################ */
+/* Mobile Menu part start here */
+/* ############################ */
+header{
+    display: none;
+}
+.mobile-nav {
+    display: block;
+}
+.mobile-nav .brand-name{
+    margin-top: -25px;
+    margin-left: 20px;
+}
+.mobile-nav .brand-name a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.mobile-nav-icon{
+    text-align: end;
+}
+.mobile-nav-icon span {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #797d62;
+    width: 100%;
+    float: right;
+    margin-top: -70px;
+}
+.overlay {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    background: #faf6f6;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .4s;
+}
+.overlay-content a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+.overlay-content a:hover{
+    text-decoration: none;
+    font-size: 16px;
+    color: #747171;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+.overlay-content{
+    position: relative;
+    top: 30%;
+}
+.closebtn{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+    /*#######################################
+    ######## Hero section start here ########
+    ######################################### */
+    .hero-container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:30px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        height: 600px;
+        padding-top:0px;
+        margin-bottom: 50px;
+    }
+    .hero-container-content{
+        flex: 1;
+        align-self: center;
+        text-align: center;
+    }
+    .hero-container-content p{
+        margin-top:-10px;
+        font-size: 14px;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+    .hero-container-content h4{
+        font-size: 12px;
+        color: #023047;
+        text-transform: uppercase;
+        font-weight: 600;  
+    }
+    .hero-container-content h2{
+        font-size: 25px;
+        color:#797d62 ;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: -10px;
+    }
+    .hero-container-content a{
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #023047;
+        border: 2px solid #023047;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color:#d3ab9e;
+        border-radius: 5px;
+    }
+    .hero-container-content a:hover{
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #023047;
+        border: 2px solid #023047;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color:#eae4e9;
+        border-radius: 5px;
+        transition: 0.7s;
+    }
+    .hero-container-img img{
+        flex: 1;
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 15px;
+    }
+/*################################################
+######## sp-collection section start here ########
+################################################## */
+.sp-collection-title{
+    text-align: center;
+    font-size: 15px;
+    color: #023047;
+    text-transform: uppercase;
+    margin-bottom: 40px
+}
+.sp-collection{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -100px;
+}
+.sp-collection-container{
+    display: block;
+}
+.sp-collection-container-content{
+    color: #023047;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+.sp-collection-container-content-img img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+ }
+.sp-collection-container-content-post{
+   border: 1px solid #797d62;
+   margin: 10px;
+   padding: 10px;
+   padding-bottom: 40px;
+   line-height: 20px;
+   border-radius:5px
+ }
+ .sp-collection-container-content-post h4{
+     font-size: 12px;
+    color: #eae4e9;
+    background-color: #023047;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+ }
+ .sp-collection-container-content-post a{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #023047;
+    border: 2px solid #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color:#d3ab9e;
+    border-radius: 5px;
+ }
+ .sp-collection-container-content-post a:hover{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #023047;
+    border: 2px solid #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color:#eae4e9;
+    border-radius: 5px;
+    transition: 0.7s;
+ }
+
+ /*#######################################
+######## Footer section start here ########
+######################################### */
+footer{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #797d62;
+    height: 80px;
+    justify-content: center;
+    place-items: center;
+    margin-top: 50px;
+}
+footer p{
+    color: #eae4e9;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+}

@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eae4e9;
+}
+
+/*##############################
+######## Header start here ########
+################################ */
+header {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand-name a {
+    text-decoration: none;
+    font-size: 34px;
+    color: #023047;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header ul li a {
+    color: #023047;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 35px;
+    padding: 8px 24px;
+    font-weight: bold;
+}
+
+header nav ul li:nth-child(3) {
+    background-color: #d3ab9e;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+/* ############################ */
+/* Mobile Menu part start here */
+/* ############################ */
+.mobile-nav {
+    display: none;
+}
+
+/*##############################
+######## Hero start here ########
+################################ */
+.container-hero {
+    background: linear-gradient(rgb(224, 224, 227), rgba(146, 146, 150, 0.4)), url(../img/shop-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.container-hero .container-hero-content h2 {
+    position: absolute;
+    top: 220px;
+    left: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #023047;
+}
+
+/*################################################
+######## sp-collection section start here ########
+################################################## */
+.sp-collection {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 100px;
+}
+
+.sp-collection-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding-bottom: 100px;
+}
+
+.sp-collection-container-content {
+    flex: 1;
+    flex-wrap: wrap;
+    color: #023047;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.sp-collection-container-content-img {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.sp-collection-container-content-img img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.sp-collection-container-content-post {
+    flex: 1;
+    flex-wrap: wrap;
+    border: 1px solid #797d62;
+    margin: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    line-height: 20px;
+    border-radius: 5px;
+}
+.sp-collection-container-content-post h2 {
+    font-size: 18px;
+}
+.sp-collection-container-content-post h4 {
+    color: #eae4e9;
+    font-size: 15px;
+    background-color: #023047;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+.sp-collection-container-content:hover .sp-collection-container-content-post p {
+    display: none;
+}
+.sp-collection-container-content:hover{
+    background-color: #797d62;
+    transition: 1s;
+}
+
+.sp-collection-container-content:hover .hover-btn a {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #023047;
+    border: 2px solid #023047;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #d3ab9e;
+    border-radius: 5px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+.hover-btn a {
+    display: none;
+}
+
+/*#######################################
+######## Footer section start here ########
+######################################### */
+footer {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #797d62;
+    height: 100px;
+    justify-content: center;
+    place-items: center;
+}
+footer p {
+    color: #eae4e9;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+/*#######################################
+######## Mobile device start here ########
+######################################### */
+@media(max-width:767px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background-color: #eae4e9;
+    }
+    /* ############################ */
+    /* Mobile Menu part start here */
+    /* ############################ */
+    header {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav .brand-name {
+        margin-top: -25px;
+        margin-left: 20px;
+    }
+
+    .mobile-nav .brand-name a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .mobile-nav-icon {
+        text-align: end;
+    }
+
+    .mobile-nav-icon span {
+        color: #ffffff;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: #797d62;
+        width: 100%;
+        float: right;
+        margin-top: -70px;
+    }
+
+    .overlay {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #faf6f6;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: .4s;
+    }
+
+    .overlay-content a {
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .overlay-content a:hover {
+        text-decoration: none;
+        font-size: 16px;
+        color: #747171;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 30%;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        font-size: 40px;
+        text-decoration: none;
+        color: black;
+    }
+
+    /*#######################################
+    ######## Hero section start here ########
+    ######################################### */
+    .container-hero {
+        margin-top: -25px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    .container-hero .container-hero-content h2 {
+        position: absolute;
+        top: 95px;
+        left: 140px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #023047;
+    }
+
+    /*################################################
+######## sp-collection section start here ########
+################################################## */
+    .sp-collection {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sp-collection-container {
+        display: block;
+        margin-top: -100px;
+    }
+
+    .sp-collection-container-content {
+        color: #023047;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .sp-collection-container-content-img img {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .sp-collection-container-content-post {
+        border: 1px solid #797d62;
+        margin: 10px;
+        padding: 10px;
+        padding-bottom: 28px;
+        line-height: 20px;
+        border-radius: 5px
+    }
+    .sp-collection-container-content-post h4 {
+        font-size: 12px;
+        color: #eae4e9;
+        background-color: #023047;
+        width: 50px;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .hover-btn a {
+        display:inline-block;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #023047;
+        border: 2px solid #023047;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #d3ab9e;
+        border-radius: 5px;
+    }
+    .hover-btn a:hover {
+        display:inline-block;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #023047;
+        border: 2px solid #023047;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: #eae4e9;
+        border-radius: 5px;
+        transition: 0.7s;
+    }
+
+    /*#######################################
+######## Footer section start here ########
+######################################### */
+    footer {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #797d62;
+        height: 80px;
+        justify-content: center;
+        place-items: center;
+        margin-top: -80px;
+    }
+
+    footer p {
+        color: #eae4e9;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+}

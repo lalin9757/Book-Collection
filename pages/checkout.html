@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--######## Font linked here ########-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--######## favicon linked here ########-->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!--######## Css linked here ########-->
+    <link rel="stylesheet" href="../css/checkout.css">
+    <title>Book Checkout</title>
+</head>
+<!--#################################-->
+<!--######## Body start here ########-->
+<!--#################################-->
+<body>
+<!--#################################-->
+<!--######## Header start here ########-->
+<!--#################################-->
+<header>
+    <div class="brand-name">
+        <a href="../index.html"><h2>BookC</h2></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Main</a></li>
+            <li><a href="../pages/shop.html">Shop</a></li>
+            <li><a href="#">Offer</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- ######################## -->
+<!-- Mobile Menu start here -->
+<!-- ######################## -->
+<nav class="mobile-nav">
+    <div class="brand-name">
+        <a href="../index.html"><h2>BookC</h2></a>
+    </div>
+    <div class="mobile-nav-icon">
+       <span onclick="openNav()">&#9776;</span>
+    </div>
+       <div id="nav" class="overlay">
+           <a class="closebtn" onclick="closeNav()" href="javascript:void()">&times;</a>
+           <div class="overlay-content">
+               <a onclick="closeNav()" href="../index.html">Main</a>
+               <a onclick="closeNav()" href="../pages/shop.html">Shop</a>
+               <a onclick="closeNav()" href="#">Offer</a>
+           </div>
+       </div>
+</nav>
+
+<script>
+
+function openNav() {
+   document.getElementById("nav").style.width = "100%";
+}
+function closeNav() {
+   document.getElementById("nav").style.width = "0%";
+}
+
+</script>
+
+<!--#################################-->
+<!--######## Hero start here ########-->
+<!--#################################-->
+
+<section class="container-hero">
+    <div class="container-hero-content">
+        <h2>Checkout</h2>
+    </div>
+</section>
+
+<!--##################################################-->
+<!--######## Form section start here ########-->
+<!--##################################################-->
+<section class="container">
+    <div class="container-form">
+        <form action="../pages/thank-you.html">
+            <label for="">Full Name</label>
+            <input type="text" name="" id="" placeholder="Enter Your Name" required><br><br>
+
+            <label for="">Email</label>
+            <input type="email" name="" id="" placeholder="Enter Your Email" required><br><br>
+
+            <label for="">Address</label>
+            <input type="text" name="" id="" placeholder="Enter Your Address" required><br><br>
+
+            <label for="">Phone No</label>
+            <input type="number" name="" id="" placeholder="Enter Your Phone No" required><br><br>
+
+            <label for="">Enter The Price</label>
+            <input type="text" name="" id="" placeholder="Enter Your Price" required><br><br>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+    <div class="collection-container">
+        <div class="collection-container-content-img">
+            <img src="../img/home-img2.png" alt="home-img2">
+        </div>
+        <div class="collection-container-content-post">
+            <h2>Product Two</h2>
+            <h4>$80</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, explicabo earum natus quos minus facilis!</p>
+         </div>
+    </div>
+    
+</section>
+
+<!--############################################-->
+<!--######## Footer section start here #########-->
+<!--############################################-->
+<footer>
+    <p>©All rights reserved by Lalin</p>
+</footer>
+
+</body>
+</html>
